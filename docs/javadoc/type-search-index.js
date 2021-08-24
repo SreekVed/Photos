@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"controller","l":"AdminController"},{"p":"model","l":"Album"},{"l":"All Classes","url":"allclasses-index.html"},{"p":"controller","l":"LoginController"},{"p":"model","l":"Photo"},{"p":"model","l":"Photos"},{"p":"controller","l":"PhotosController"},{"p":"controller","l":"SearchController"},{"p":"model","l":"User"},{"p":"controller","l":"UserController"}]

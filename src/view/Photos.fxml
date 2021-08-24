@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11"
+            fx:controller="controller.PhotosController">
+    <ListView fx:id="photoList" fixedCellSize="35.0" layoutX="149.0" layoutY="94.0" prefHeight="249.0"
+              prefWidth="190.0"/>
+    <Label fx:id="headerText" alignment="TOP_CENTER" layoutX="16.0" layoutY="25.0" prefHeight="46.0" prefWidth="570.0"
+           text="Photos in Album">
+        <font>
+            <Font size="30.0"/>
+        </font>
+    </Label>
+    <ImageView fx:id="imageView" fitHeight="132.0" fitWidth="234.0" layoutX="354.0" layoutY="94.0" pickOnBounds="true"
+               preserveRatio="true"/>
+    <Button layoutX="149.0" layoutY="364.0" mnemonicParsing="false" onAction="#prevPhoto" prefHeight="26.0"
+            prefWidth="78.0" text="Previous"/>
+    <Button layoutX="262.0" layoutY="364.0" mnemonicParsing="false" onAction="#nextPhoto" prefHeight="26.0"
+            prefWidth="78.0" text="Next"/>
+    <Button layoutX="15.0" layoutY="94.0" mnemonicParsing="false" onAction="#addPhoto" prefHeight="36.0"
+            prefWidth="114.0" text="Add Photo"/>
+    <Button layoutX="13.0" layoutY="147.0" mnemonicParsing="false" onAction="#deletePhoto" prefHeight="36.0"
+            prefWidth="114.0" text="Delete Photo"/>
+    <Button layoutX="14.0" layoutY="201.0" mnemonicParsing="false" onAction="#editCaption" prefHeight="36.0"
+            prefWidth="114.0" text="Add/Edit Caption"/>
+    <Button layoutX="13.0" layoutY="252.0" mnemonicParsing="false" onAction="#addTag" prefHeight="36.0" prefWidth="50.0"
+            text="+ Tag"/>
+    <Button layoutX="78.0" layoutY="305.0" mnemonicParsing="false" onAction="#movePhoto" prefHeight="36.0"
+            prefWidth="50.0" text="Move"/>
+    <Button layoutX="22.0" layoutY="364.0" mnemonicParsing="false" onAction="#goBack" prefHeight="26.0" prefWidth="97.0"
+            text="Go Back" textFill="RED"/>
+    <Label fx:id="captionLabel" alignment="TOP_CENTER" layoutX="354.0" layoutY="227.0" prefHeight="26.0"
+           prefWidth="234.0">
+        <font>
+            <Font size="14.0"/>
+        </font>
+    </Label>
+    <Label fx:id="tagsLabel" alignment="TOP_CENTER" layoutX="351.0" layoutY="290.0" prefHeight="102.0"
+           prefWidth="234.0">
+        <font>
+            <Font size="14.0"/>
+        </font>
+    </Label>
+    <Label fx:id="dateLabel" alignment="TOP_CENTER" layoutX="351.0" layoutY="257.0" prefHeight="26.0" prefWidth="234.0">
+        <font>
+            <Font size="14.0"/>
+        </font>
+    </Label>
+    <Button layoutX="13.0" layoutY="305.0" mnemonicParsing="false" onAction="#copyPhoto" prefHeight="36.0"
+            prefWidth="50.0" text="Copy"/>
+    <Button layoutX="78.0" layoutY="252.0" mnemonicParsing="false" onAction="#deleteTag" prefHeight="36.0"
+            prefWidth="50.0" text="- Tag"/>
+</AnchorPane>

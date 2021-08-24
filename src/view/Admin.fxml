@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11"
+            fx:controller="controller.AdminController">
+    <ListView fx:id="userList" layoutX="150.0" layoutY="90.0" prefHeight="281.0" prefWidth="222.0"/>
+    <Button fx:id="addButton" layoutX="31.0" layoutY="92.0" mnemonicParsing="false" onAction="#addUser"
+            prefHeight="47.0" prefWidth="91.0" text="Add User"/>
+    <Button layoutX="31.0" layoutY="330.0" mnemonicParsing="false" onAction="#logout" prefHeight="33.0"
+            prefWidth="91.0" text="Logout" textFill="RED"/>
+    <Button layoutX="31.0" layoutY="207.0" mnemonicParsing="false" onAction="#deleteUser" prefHeight="47.0"
+            prefWidth="91.0" text="Delete User"/>
+    <Label alignment="CENTER" layoutX="13.0" layoutY="14.0" prefHeight="54.0" prefWidth="374.0" text="Admin Panel">
+        <font>
+            <Font size="36.0"/>
+        </font>
+    </Label>
+</AnchorPane>
